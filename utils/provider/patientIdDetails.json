@@ -1,0 +1,34 @@
+[
+  {
+    "patientId": "JA01001227",
+    "capturedAt": "2026-09-08T10:37:13.510Z"
+  },
+  {
+    "patientId": "JA01001228",
+    "capturedAt": "2026-09-08T10:41:15.316Z"
+  },
+  {
+    "patientId": "JA01001282",
+    "capturedAt": "2026-09-11T07:12:09.977Z"
+  },
+  {
+    "patientId": "JA01001283",
+    "capturedAt": "2026-09-11T07:18:09.611Z"
+  },
+  {
+    "patientId": "JA01001284",
+    "capturedAt": "2026-09-11T09:45:09.354Z"
+  },
+  {
+    "patientId": "JA01001285",
+    "capturedAt": "2026-09-11T09:48:01.191Z"
+  },
+  {
+    "patientId": "JA01001286",
+    "capturedAt": "2026-09-11T09:50:33.900Z"
+  },
+  {
+    "patientId": "JA01001288",
+    "capturedAt": "2026-09-11T12:02:33.457Z"
+  }
+]

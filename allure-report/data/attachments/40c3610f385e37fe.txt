@@ -1,0 +1,27 @@
+Successfully logged into adeahub
+Clicked on Patient Registration Button
+Selected Title as Dr
+Entered National ID as 0020217457
+Selected Gender as Male
+Selected Patient DOB as 150/5/15
+Selected Patient Marital Status as Single
+Selected Patient Residence as Urban
+Selected Patient Occupation as Private
+Entered Patient IQAMA ID as IQ20217457
+Entered Patient Mobile Number as ABCY202174
+Entered Patient Passport Number as 2345678987
+Entered Patient Contact details as +966 0555123456 / patient.test@example.com
+Entered Patient Address as 123 Main St, Dammam, SAUDI
+Selected Patient Category as Package Deal
+Selected Patient Race as DOT
+Selected Patient Religion as MUSLIM
+Captured full-page screenshot of the Register New Patient page
+Clicked on Continue Button
+Entered Patient Next of Kin Name as Rocky
+Clicked on Continue Button
+Clicked on Continue Button
+Selected Billing Group as Cash Patient
+Clicked on Continue Button
+Clicked on Create Patient's Account Button
+Captured Patient ID: JA01001286
+Patient Registration Completed Successfully.
