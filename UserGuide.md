@@ -352,6 +352,17 @@ Potential future improvements include:
 
 ---
 
-## 14. Summary
+## 14. How to add to github
+
+Create a new repository on the command line
+echo "# Repo Name" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Entomo4121/AHCareAutomation.git
+git push -u origin main
+
+## 15. Summary
 
 This repository is a functional Playwright automation framework with a Page Object Model, JSON-driven data, multi-browser support, and reporting capabilities. It is structured to support continued growth and can be used as a base for broader end-to-end testing across the application.

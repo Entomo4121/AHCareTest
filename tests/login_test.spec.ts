@@ -31,4 +31,8 @@ test('login with valid user credentials', async ({ page }) => {
   await registerNewPatient.createPatientAccount();
   await registerNewPatient.captureAndSavePatientId();
   console.log('Patient Registration Completed Successfully.');
+  console.log('Patient ID captured and saved successfully.');
 });
+
+
+

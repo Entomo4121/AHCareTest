@@ -6,6 +6,7 @@ export class RegisterNewPatient {
   readonly page: Page;
 
   // Tab 1: Patient's details
+  
   readonly patientRegistrationButton: Locator;
   readonly titleTextBox: Locator;
   readonly firstnameTextBox: Locator;
@@ -54,8 +55,8 @@ export class RegisterNewPatient {
 
     this.patientRegistrationButton = page.getByText('Register New Patient');
     this.titleTextBox = page.getByRole("textbox", {
-        name: /Prefix|Title/i
-      }).first();
+      name: /Prefix|Title/i
+    }).first();
     this.firstnameTextBox = page.getByRole('textbox', { name: 'First Name', exact: true });
     this.secondnameTextBox = page.getByRole('textbox', { name: 'Second Name', exact: true });
     this.familynameTextBox = page.getByRole('textbox', { name: 'Family Name', exact: true });
@@ -89,7 +90,8 @@ export class RegisterNewPatient {
     this.patientRaceDropdown = page.getByPlaceholder('Race');
     this.patientReligionDropdown = page.getByRole('textbox', { name: 'Religion' });
     this.patientContinueButton = page.getByRole("button", {
-            name: "Continue", exact: true});
+      name: "Continue", exact: true
+    });
 
     this.nextOfKinFullNameTextBox = page.locator('#nok-name');
 
@@ -132,8 +134,8 @@ export class RegisterNewPatient {
     await this.patientRegistrationButton.click();
     console.log('Clicked on Patient Registration Button');
   }
-   async selectTitle(){
-   await this.selectFromDropdown(this.titleTextBox, 'Dr', 'Dr');
+  async selectTitle() {
+    await this.selectFromDropdown(this.titleTextBox, 'Dr', 'Dr');
     console.log('Selected Title as Dr');
   }
 
@@ -147,10 +149,10 @@ export class RegisterNewPatient {
     const uniqueNationalId = this.uniqueSuffix.padStart(10, '0');
     await this.nationalIdTextBox.fill(uniqueNationalId);
     console.log(`Entered National ID as ${uniqueNationalId}`);
-    
+
     await this.genderRadioButton.click();
     console.log(`Selected Gender as ${patientData.gender}`);
-    
+
     await this.patientDOBYearTextBox.fill(patientData.ageYears);
     await this.patientDOMbutton.fill(patientData.ageMonths);
     await this.patientdobDaybutton.fill(patientData.ageDays);
@@ -175,7 +177,7 @@ export class RegisterNewPatient {
     await this.patientMobileNumberTextBox.fill(uniqueMobileNumber);
     console.log(`Entered Patient Mobile Number as ${uniqueMobileNumber}`);
 
-    
+
     await this.patientPassportNumberTextBox.fill("2345678987");
     console.log(`Entered Patient Passport Number as 2345678987`);
     // Known app defect: selecting Non-Citizen residency intermittently mirrors the IQAMA value
@@ -255,3 +257,5 @@ export class RegisterNewPatient {
     return patientId;
   }
 }
+
+
