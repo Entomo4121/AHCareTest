@@ -1,6 +1,34 @@
-import { Locator, Page } from '@playwright/test';
+declare const require: (module: string) => any;
+declare const __dirname: string;
+
+const fs = require('node:fs');
+const path = require('node:path');
+
+import {Locator, Page } from '@playwright/test';
 import patientData from '../TestData/patientRegistrationData.json';
-import { savePatientId } from '../utils/provider/patientIdDetails';
+
+const patientIdDetailsPath = path.resolve(__dirname, '../utils/provider/patientIdDetails.json');
+
+function savePatientId(patientId: string): void {
+  let existingPatientIds: Array<{ patientId: string; capturedAt: string }> = [];
+
+  if (fs.existsSync(patientIdDetailsPath)) {
+    const fileContents = fs.readFileSync(patientIdDetailsPath, 'utf8').trim();
+    if (fileContents) {
+      const parsed = JSON.parse(fileContents);
+      if (Array.isArray(parsed)) {
+        existingPatientIds = parsed;
+      }
+    }
+  }
+
+  existingPatientIds.push({
+    patientId,
+    capturedAt: new Date().toISOString(),
+  });
+
+  fs.writeFileSync(patientIdDetailsPath, JSON.stringify(existingPatientIds, null, 2));
+}
 
 export class RegisterNewPatient {
   readonly page: Page;

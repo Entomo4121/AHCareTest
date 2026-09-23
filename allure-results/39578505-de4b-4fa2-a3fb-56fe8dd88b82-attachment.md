@@ -1,0 +1,640 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - region "Notifications alt+T"
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - button "AdeaHub Care" [ref=e5] [cursor=pointer]:
+          - generic [ref=e6]:
+            - img "AdeaHub" [ref=e8]
+            - generic [ref=e9]: Care
+        - generic [ref=e11]:
+          - 'button "Language: EN" [ref=e12] [cursor=pointer]':
+            - img [ref=e13]
+            - generic [ref=e15]: en
+          - button "Notifications" [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - button "Tasks" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+          - button "Messages" [ref=e22] [cursor=pointer]:
+            - img [ref=e23]
+          - button "Adea AI" [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+      - generic [ref=e28]:
+        - complementary [ref=e29]:
+          - navigation [ref=e30]:
+            - button "Hub" [ref=e31] [cursor=pointer]:
+              - img [ref=e32]
+            - button "Patients" [ref=e34] [cursor=pointer]:
+              - img [ref=e35]
+            - button "Collab" [disabled] [ref=e37]:
+              - img [ref=e38]
+            - button "Recordings" [ref=e40] [cursor=pointer]:
+              - img [ref=e41]
+            - button "Care Plans" [disabled] [ref=e43]:
+              - img [ref=e44]
+            - button "Apps" [ref=e46] [cursor=pointer]:
+              - img [ref=e47]
+          - generic [ref=e51]:
+            - button "Help" [ref=e52] [cursor=pointer]:
+              - img [ref=e53]
+            - button "Settings" [disabled] [ref=e55]:
+              - img [ref=e56]
+            - button "PU" [ref=e59] [cursor=pointer]:
+              - generic [ref=e61]: PU
+        - complementary [ref=e63]:
+          - generic [ref=e65]:
+            - heading "Hub" [level=2] [ref=e67]
+            - button "Collapse panel" [ref=e68] [cursor=pointer]:
+              - img
+          - generic [ref=e71]:
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e77]: PU
+                - generic [ref=e78]:
+                  - paragraph [ref=e79]: Playwriter User
+                  - paragraph [ref=e80]: Physician
+              - generic [ref=e82] [cursor=pointer]:
+                - paragraph [ref=e83]: Current location
+                - generic [ref=e84]:
+                  - paragraph [ref=e85]: General Surgery Worskspace
+                  - img [ref=e86]
+            - paragraph [ref=e89]: Worklist
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - img [ref=e93]
+                - textbox "Pat Id/Enc/Name/Mobile" [ref=e95]
+              - button "Additional Search" [ref=e96]:
+                - img [ref=e97]
+            - region "scrollable content" [ref=e104]:
+              - generic [ref=e106]:
+                - button "Consultation In Progress OP-100020050001 2026 EMM1 Test 18th Sep M 21Y 11M 08D MRN#JA01001367" [ref=e108]:
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: Consultation In Progress
+                    - generic [ref=e111]: OP-100020050001
+                  - generic [ref=e113]: 2026 EMM1 Test 18th Sep
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: M
+                    - generic [ref=e116]: 21Y 11M 08D
+                    - generic [ref=e117]: MRN#JA01001367
+                - button "Checked In OP-100020040001 Allen 3 OP M 45Y 00M 07D MRN#JA01001320" [ref=e120]:
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: Checked In
+                    - generic [ref=e123]: OP-100020040001
+                  - generic [ref=e125]: Allen 3 OP
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: M
+                    - generic [ref=e128]: 45Y 00M 07D
+                    - generic [ref=e129]: MRN#JA01001320
+                - button "Arrived OP-100020030001 Ibtisam Aban Abu Sultaneh F 28Y 08M 07D MRN#JA01001391" [ref=e132]:
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: Arrived
+                    - generic [ref=e135]: OP-100020030001
+                  - generic [ref=e137]: Ibtisam Aban Abu Sultaneh
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: F
+                    - generic [ref=e140]: 28Y 08M 07D
+                    - generic [ref=e141]: MRN#JA01001391
+                - button "Checked In OP-100020020001 mandatory patient auto F 23Y 00M 00D MRN#JA01001390" [ref=e144]:
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: Checked In
+                    - generic [ref=e147]: OP-100020020001
+                  - generic [ref=e149]: mandatory patient auto
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: F
+                    - generic [ref=e152]: 23Y 00M 00D
+                    - generic [ref=e153]: MRN#JA01001390
+                - button "Checked Out OP-100020010001 Mandatory Patient Auto F 23Y 00M 00D MRN#JA01001389" [ref=e156]:
+                  - generic [ref=e157]:
+                    - generic [ref=e158]: Checked Out
+                    - generic [ref=e159]: OP-100020010001
+                  - generic [ref=e161]: Mandatory Patient Auto
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: F
+                    - generic [ref=e164]: 23Y 00M 00D
+                    - generic [ref=e165]: MRN#JA01001389
+                - button "Checked Out OP-100020000001 Mandatory patient Auto F 23Y 00M 00D MRN#JA01001388" [ref=e168]:
+                  - generic [ref=e169]:
+                    - generic [ref=e170]: Checked Out
+                    - generic [ref=e171]: OP-100020000001
+                  - generic [ref=e173]: Mandatory patient Auto
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: F
+                    - generic [ref=e176]: 23Y 00M 00D
+                    - generic [ref=e177]: MRN#JA01001388
+                - button "Checked Out OP-100019990001 Aaeda , Abbas , Ababne F 22Y 00M 00D MRN#JA01001386" [ref=e180]:
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: Checked Out
+                    - generic [ref=e183]: OP-100019990001
+                  - generic [ref=e185]: Aaeda , Abbas , Ababne
+                  - generic [ref=e186]:
+                    - generic [ref=e187]: F
+                    - generic [ref=e188]: 22Y 00M 00D
+                    - generic [ref=e189]: MRN#JA01001386
+                - button "Checked Out OP-100019980001 Aaeda , Abbas , Ababne F 22Y 00M 00D MRN#JA01001387" [ref=e192]:
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Checked Out
+                    - generic [ref=e195]: OP-100019980001
+                  - generic [ref=e197]: Aaeda , Abbas , Ababne
+                  - generic [ref=e198]:
+                    - generic [ref=e199]: F
+                    - generic [ref=e200]: 22Y 00M 00D
+                    - generic [ref=e201]: MRN#JA01001387
+                - button "Checked Out OP-100019970001 zx zxx xsd M 11H MRN#JA01001385" [ref=e204]:
+                  - generic [ref=e205]:
+                    - generic [ref=e206]: Checked Out
+                    - generic [ref=e207]: OP-100019970001
+                  - generic [ref=e209]: zx zxx xsd
+                  - generic [ref=e210]:
+                    - generic [ref=e211]: M
+                    - generic [ref=e212]: 11H
+                    - generic [ref=e213]: MRN#JA01001385
+                - button "Checked Out OP-100019960001 Madatory family Auto F 23Y 00M 00D MRN#JA01001384" [ref=e216]:
+                  - generic [ref=e217]:
+                    - generic [ref=e218]: Checked Out
+                    - generic [ref=e219]: OP-100019960001
+                  - generic [ref=e221]: Madatory family Auto
+                  - generic [ref=e222]:
+                    - generic [ref=e223]: F
+                    - generic [ref=e224]: 23Y 00M 00D
+                    - generic [ref=e225]: MRN#JA01001384
+            - generic [ref=e226]:
+              - button "Previous page" [disabled] [ref=e227]:
+                - img [ref=e228]
+              - generic [ref=e230]: Page 1 of 2
+              - button "Next page" [ref=e231]:
+                - img [ref=e232]
+        - main [ref=e236]:
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - heading "Register a New Patient" [level=1] [ref=e242]
+                - paragraph [ref=e243]: Register and add this patient to the system
+              - generic [ref=e244]:
+                - switch "Rapid Registration" [ref=e246]
+                - paragraph [ref=e250]: Rapid Registration
+            - generic [ref=e252]:
+              - button "Patient's details" [ref=e254]:
+                - generic [ref=e257]: Patient's details
+              - button "Next of Kin" [ref=e258] [cursor=pointer]:
+                - generic [ref=e260]: Next of Kin
+              - button "Documents" [ref=e261] [cursor=pointer]:
+                - generic [ref=e263]: Documents
+              - button "Payer Group" [ref=e264] [cursor=pointer]:
+                - generic [ref=e266]: Payer Group
+              - button "Review & Confirm" [ref=e267] [cursor=pointer]:
+                - generic [ref=e269]: Review & Confirm
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]:
+                  - paragraph [ref=e275]: Patient's details
+                  - paragraph [ref=e276]: Patient's name, contact details and other personal information
+                - generic [ref=e277]:
+                  - button "Reset" [ref=e278] [cursor=pointer]:
+                    - generic [ref=e279]: Reset
+                  - button "Continue to Payer Group" [ref=e280] [cursor=pointer]:
+                    - generic [ref=e281]: Continue to Payer Group
+                  - button "Continue" [ref=e282] [cursor=pointer]:
+                    - generic [ref=e283]: Continue
+              - generic [ref=e285]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]:
+                    - paragraph [ref=e288]:
+                      - text: Patient's name
+                      - generic [ref=e289]: "*"
+                    - paragraph [ref=e290]: This will be displayed on the patient's profile.
+                  - generic [ref=e291]:
+                    - generic [ref=e293]:
+                      - paragraph [ref=e294]: Prefix*
+                      - generic [ref=e298]:
+                        - img
+                        - textbox "Title" [ref=e299]: Dr
+                        - button "Clear" [ref=e300]:
+                          - img [ref=e301]
+                    - generic [ref=e303]:
+                      - generic [ref=e304]:
+                        - paragraph [ref=e305]: Family Name*
+                        - generic [ref=e307]:
+                          - img
+                          - textbox "Family Name" [active] [ref=e308]: Smith
+                          - button "Clear" [ref=e309]:
+                            - img [ref=e310]
+                      - generic [ref=e312]:
+                        - paragraph [ref=e313]: First Name*
+                        - generic [ref=e315]:
+                          - img
+                          - textbox "First Name" [ref=e316]: John
+                          - button "Clear" [ref=e317]:
+                            - img [ref=e318]
+                      - generic [ref=e320]:
+                        - paragraph [ref=e321]: Second Name*
+                        - generic [ref=e323]:
+                          - img
+                          - textbox "Second Name" [ref=e324]: Doe
+                          - button "Clear" [ref=e325]:
+                            - img [ref=e326]
+                - generic [ref=e328]:
+                  - generic [ref=e329]:
+                    - paragraph [ref=e330]: Name in local language
+                    - paragraph [ref=e331]: Patient's name in the local language, if different.
+                  - generic [ref=e332]:
+                    - generic [ref=e334]:
+                      - paragraph [ref=e335]: Loc prefix
+                      - generic [ref=e338]:
+                        - img
+                        - textbox "Title" [ref=e339]: الدكتور
+                        - button "Clear" [ref=e340]:
+                          - img [ref=e341]
+                    - generic [ref=e343]:
+                      - generic [ref=e344]:
+                        - paragraph [ref=e345]: Loc Family Name
+                        - generic [ref=e347]:
+                          - img
+                          - textbox "Loc Family Name" [ref=e348]
+                          - img
+                      - generic [ref=e349]:
+                        - paragraph [ref=e350]: Loc Second Name
+                        - generic [ref=e352]:
+                          - img
+                          - textbox "Loc Second Name" [ref=e353]
+                          - img
+                      - generic [ref=e354]:
+                        - paragraph [ref=e355]: Loc First Name
+                        - generic [ref=e357]:
+                          - img
+                          - textbox "Loc First Name" [ref=e358]
+                          - img
+                - generic [ref=e359]:
+                  - generic [ref=e360]:
+                    - paragraph [ref=e361]:
+                      - text: Patient Series
+                      - generic [ref=e362]: "*"
+                    - paragraph [ref=e363]: Select the patient series
+                  - generic [ref=e367]:
+                    - img
+                    - textbox "Select Series" [ref=e368]: JEDDAH CLINIC
+                    - button "Clear" [ref=e369]:
+                      - img [ref=e370]
+                - generic [ref=e372]:
+                  - generic [ref=e373]:
+                    - paragraph [ref=e374]: Preferred Facility
+                    - paragraph [ref=e375]: Select patient's preferred facility
+                  - generic [ref=e379]:
+                    - img
+                    - textbox "Select Preferred Facility" [ref=e380]: Nahdicare Clinic - Jeddah-R-0000001
+                    - button "Clear" [ref=e381]:
+                      - img [ref=e382]
+                - generic [ref=e384]:
+                  - generic [ref=e385]:
+                    - paragraph [ref=e386]:
+                      - text: Registration Date Time
+                      - generic [ref=e387]: "*"
+                    - paragraph [ref=e388]: Enter Registration date and Time
+                  - generic [ref=e390]:
+                    - group "Registration Date Time" [ref=e392]:
+                      - button "Calendar Registration Date Time" [ref=e393] [cursor=pointer]:
+                        - img
+                        - generic [ref=e394]: Sep 23, 2026 16:36
+                    - textbox [ref=e396]: 2026-09-23T16:36
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - paragraph [ref=e400]:
+                      - text: Nat ID
+                      - generic [ref=e401]: "*"
+                    - paragraph [ref=e402]: Enter National ID Number
+                  - textbox "National ID Number" [ref=e407]
+                - generic [ref=e408]:
+                  - paragraph [ref=e410]:
+                    - text: Gender
+                    - generic [ref=e411]: "*"
+                  - radiogroup "Gender" [ref=e413]:
+                    - button "Male" [ref=e414]: Male
+                    - button "Female" [ref=e417]: Female
+                    - button "Others" [ref=e420]: Others
+                - generic [ref=e424]:
+                  - generic [ref=e425]:
+                    - paragraph [ref=e426]:
+                      - text: Date of birth, Age
+                      - generic [ref=e427]: "*"
+                    - paragraph [ref=e428]: Patient's date of birth and age
+                  - generic [ref=e431]:
+                    - generic [ref=e432]:
+                      - group "Date of Birth" [ref=e434]:
+                        - button "Calendar Date of Birth" [ref=e435] [cursor=pointer]:
+                          - img
+                          - generic [ref=e436]: Select date
+                      - textbox [ref=e438]
+                    - generic [ref=e439]:
+                      - textbox "Age years" [ref=e442]
+                      - generic [ref=e443]: "Y"
+                    - generic [ref=e444]:
+                      - textbox "Age months" [ref=e447]
+                      - generic [ref=e448]: M
+                    - generic [ref=e449]:
+                      - textbox "Age days" [ref=e452]
+                      - generic [ref=e453]: D
+                - generic [ref=e454]:
+                  - generic [ref=e455]:
+                    - paragraph [ref=e456]: Marital status
+                    - paragraph [ref=e457]: Patient's marital status
+                  - generic [ref=e461]:
+                    - img
+                    - textbox "Marital Status" [ref=e462]
+                    - img
+                - generic [ref=e463]:
+                  - generic [ref=e464]:
+                    - paragraph [ref=e465]: Occupation
+                    - paragraph [ref=e466]: Patient's occupation
+                  - generic [ref=e470]:
+                    - img
+                    - textbox "Occupation" [ref=e471]
+                    - img
+                - generic [ref=e473]:
+                  - generic [ref=e474]:
+                    - paragraph [ref=e475]:
+                      - text: Nationality
+                      - generic [ref=e476]: "*"
+                    - paragraph [ref=e477]: Patient's country of citizenship
+                  - generic [ref=e482]:
+                    - img
+                    - textbox "Nationality" [ref=e483]: SAUDI
+                    - button "Clear" [ref=e484]:
+                      - img [ref=e485]
+                - generic [ref=e489]:
+                  - generic [ref=e490]:
+                    - paragraph [ref=e491]: Residency and status
+                    - paragraph [ref=e492]: Patient's residency status
+                  - radiogroup "Residency status" [ref=e495]:
+                    - button "Citizen" [ref=e496]: Citizen
+                    - button "Non-Citizen" [ref=e499]: Non-Citizen
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - paragraph [ref=e504]:
+                      - text: "IQAMA / ID #"
+                      - generic [ref=e505]: "*"
+                    - paragraph [ref=e506]: "Enter IQAMA / ID #"
+                  - generic [ref=e508]:
+                    - 'textbox "IQAMA / ID #" [ref=e511]'
+                    - generic [ref=e512]:
+                      - generic [ref=e513]: Expiry Date
+                      - generic [ref=e514]:
+                        - group "Expiry Date" [ref=e516]:
+                          - button "Calendar Expiry Date" [ref=e517] [cursor=pointer]:
+                            - img
+                            - generic [ref=e518]: Select date
+                        - textbox [ref=e520]
+                - generic [ref=e521]:
+                  - generic [ref=e522]:
+                    - paragraph [ref=e523]:
+                      - text: "MOBILE #"
+                      - generic [ref=e524]: "*"
+                    - paragraph [ref=e525]: "Enter MOBILE #"
+                  - 'textbox "MOBILE #" [ref=e530]'
+                - generic [ref=e531]:
+                  - generic [ref=e532]:
+                    - paragraph [ref=e533]:
+                      - text: "PASSPORT #"
+                      - generic [ref=e534]: "*"
+                    - paragraph [ref=e535]: "Enter PASSPORT #"
+                  - 'textbox "PASSPORT #" [ref=e540]'
+                - generic [ref=e541]:
+                  - generic [ref=e542]:
+                    - paragraph [ref=e543]: Contact details
+                    - paragraph [ref=e544]: Patient's main contact information
+                  - generic [ref=e546]:
+                    - generic [ref=e549]:
+                      - generic [ref=e550]:
+                        - generic [ref=e553]:
+                          - textbox "Select code" [ref=e554]
+                          - img
+                        - textbox "Phone number" [ref=e556]
+                      - button "Add phone number" [ref=e557]:
+                        - img [ref=e558]
+                    - generic [ref=e563]:
+                      - img
+                      - textbox "Email address" [ref=e564]
+                - generic [ref=e565]:
+                  - paragraph [ref=e567]: User's picture
+                  - generic [ref=e569]:
+                    - img [ref=e572]
+                    - generic [ref=e575]:
+                      - img [ref=e577]
+                      - generic [ref=e579]:
+                        - generic [ref=e580]:
+                          - button "Choose File"
+                          - button "Click to upload" [ref=e582] [cursor=pointer]:
+                            - generic [ref=e583]: Click to upload
+                          - generic [ref=e584]: or drag and drop
+                        - paragraph [ref=e585]: JPG, JPEG or PNG only (max. 100KB)
+                    - button [ref=e586]:
+                      - img [ref=e587]
+                - generic [ref=e590]:
+                  - generic [ref=e591]:
+                    - paragraph [ref=e592]: Address
+                    - paragraph [ref=e593]: Patient's current address
+                  - generic [ref=e596]:
+                    - generic [ref=e597]:
+                      - textbox "Address Line 1" [ref=e600]
+                      - textbox "Address Line 2" [ref=e602]
+                      - textbox "Address Line 3" [ref=e604]
+                      - textbox "Address Line 4" [ref=e606]
+                      - generic [ref=e607]:
+                        - generic [ref=e610]:
+                          - img
+                          - textbox "Town" [ref=e611]
+                          - img
+                        - generic [ref=e614]:
+                          - img
+                          - textbox "Area" [ref=e615]
+                          - img
+                        - generic [ref=e618]:
+                          - img
+                          - textbox "Governorate" [ref=e619]
+                          - img
+                        - generic [ref=e622]:
+                          - img
+                          - textbox "Postalcode" [ref=e623]
+                          - img
+                      - generic [ref=e626]:
+                        - img
+                        - textbox "Country" [ref=e627]
+                        - img
+                    - button "Add another address" [ref=e628]:
+                      - img [ref=e629]
+                      - text: Add another address
+                - generic [ref=e631]:
+                  - generic [ref=e632]:
+                    - paragraph [ref=e633]: Blood group
+                    - paragraph [ref=e634]: Patient's blood group
+                  - generic [ref=e638]:
+                    - img
+                    - textbox "Blood Group" [ref=e639]
+                    - img
+                - generic [ref=e640]:
+                  - generic [ref=e641]:
+                    - paragraph [ref=e642]: RH(D) Factor
+                    - paragraph [ref=e643]: Patient's RH(D) factor
+                  - generic [ref=e647]:
+                    - img
+                    - textbox "RH(D) Factor" [ref=e648]
+                    - img
+                - generic [ref=e649]:
+                  - generic [ref=e650]:
+                    - paragraph [ref=e651]: Known Allergy
+                    - paragraph [ref=e652]: Patient's known allergy status
+                  - generic [ref=e655]:
+                    - button "Select" [ref=e656] [cursor=pointer]:
+                      - generic [ref=e657]:
+                        - paragraph [ref=e658]: Select
+                        - img [ref=e659]
+                    - combobox [ref=e663]
+                - generic [ref=e664]:
+                  - generic [ref=e665]:
+                    - paragraph [ref=e666]: Patient category
+                    - paragraph [ref=e667]: Patient's registration category
+                  - generic [ref=e671]:
+                    - img
+                    - textbox "Patient Category" [ref=e672]
+                    - img
+                - generic [ref=e673]:
+                  - generic [ref=e674]:
+                    - paragraph [ref=e675]: Birth place
+                    - paragraph [ref=e676]: Patient's place of birth
+                  - generic [ref=e680]:
+                    - img
+                    - textbox "Birth Place" [ref=e681]
+                    - img
+                - generic [ref=e682]:
+                  - generic [ref=e683]:
+                    - paragraph [ref=e684]: Ethnicity
+                    - paragraph [ref=e685]: Patient's ethnicity
+                  - generic [ref=e689]:
+                    - img
+                    - textbox "Ethnicity" [ref=e690]
+                    - img
+                - generic [ref=e691]:
+                  - generic [ref=e692]:
+                    - paragraph [ref=e693]: Race
+                    - paragraph [ref=e694]: Patient's race
+                  - generic [ref=e698]:
+                    - img
+                    - textbox "Race" [ref=e699]
+                    - img
+                - generic [ref=e700]:
+                  - generic [ref=e701]:
+                    - paragraph [ref=e702]: Language
+                    - paragraph [ref=e703]: Patient's preferred language
+                  - generic [ref=e707]:
+                    - img
+                    - textbox "Language" [ref=e708]: English
+                    - button "Clear" [ref=e709]:
+                      - img [ref=e710]
+                - generic [ref=e712]:
+                  - generic [ref=e713]:
+                    - paragraph [ref=e714]: Religion
+                    - paragraph [ref=e715]: Patient's religion
+                  - generic [ref=e719]:
+                    - img
+                    - textbox "Religion" [ref=e720]
+                    - img
+                - generic [ref=e721]:
+                  - generic [ref=e722]:
+                    - paragraph [ref=e723]: Alias Name
+                    - paragraph [ref=e724]: Patient's alias name
+                  - textbox "Alias name" [ref=e728]
+                - generic [ref=e729]:
+                  - generic [ref=e730]:
+                    - paragraph [ref=e731]: Patient has one Eye
+                    - paragraph [ref=e732]: Indicate if patient has only one eye
+                  - generic [ref=e735]:
+                    - button "Select Eye" [ref=e736] [cursor=pointer]:
+                      - generic [ref=e737]:
+                        - paragraph [ref=e738]: Select Eye
+                        - img [ref=e739]
+                    - combobox [ref=e743]
+                - generic [ref=e744]:
+                  - generic [ref=e745]:
+                    - paragraph [ref=e746]: Blood Donor
+                    - paragraph [ref=e747]: Is the patient a blood donor?
+                  - generic [ref=e749] [cursor=pointer]:
+                    - checkbox "Yes" [ref=e750]
+                    - generic [ref=e751]: "Yes"
+                - generic [ref=e752]:
+                  - generic [ref=e753]:
+                    - paragraph [ref=e754]: Additional Field 1
+                    - paragraph [ref=e755]: Enter additional field 1
+                  - textbox "Additional Field 1" [ref=e759]
+                - generic [ref=e760]:
+                  - generic [ref=e761]:
+                    - paragraph [ref=e762]: Additional Field 2
+                    - paragraph [ref=e763]: Enter additional field 2
+                  - textbox "Additional Field 2" [ref=e767]
+                - generic [ref=e768]:
+                  - generic [ref=e769]:
+                    - paragraph [ref=e770]: Additional Field 3
+                    - paragraph [ref=e771]: Enter additional field 3
+                  - textbox "Additional Field 3" [ref=e775]
+                - generic [ref=e776]:
+                  - generic [ref=e777]:
+                    - paragraph [ref=e778]: Additional Field 4
+                    - paragraph [ref=e779]: Enter additional field 4
+                  - textbox "Additional Field 4" [ref=e783]
+                - generic [ref=e784]:
+                  - generic [ref=e785]:
+                    - paragraph [ref=e786]: Additional Field 5
+                    - paragraph [ref=e787]: Enter additional field 5
+                  - textbox "Additional Field 5" [ref=e791]
+                - generic [ref=e792]:
+                  - paragraph [ref=e793]: Employment details
+                  - paragraph [ref=e794]: Patient's employment details
+                - generic [ref=e796]:
+                  - generic [ref=e797]:
+                    - paragraph [ref=e798]: Organisation Name
+                    - textbox "Organisation name" [ref=e800]
+                  - generic [ref=e801]:
+                    - paragraph [ref=e802]: Employment ID
+                    - textbox "Employment ID" [ref=e804]
+                - generic [ref=e806]:
+                  - generic [ref=e807]:
+                    - paragraph [ref=e808]: Contact Person Name
+                    - textbox "Contact person name" [ref=e810]
+                  - generic [ref=e811]:
+                    - paragraph [ref=e812]: Office Mobile Number
+                    - textbox "Office mobile number" [ref=e814]
+                - generic [ref=e815]:
+                  - generic [ref=e816]:
+                    - paragraph [ref=e817]: Employment Address
+                    - paragraph [ref=e818]: The patient's employment address
+                  - generic [ref=e821]:
+                    - textbox "Address Line 1" [ref=e824]
+                    - textbox "Address Line 2" [ref=e826]
+                    - textbox "Address Line 3" [ref=e828]
+                    - textbox "Address Line 4" [ref=e830]
+                    - generic [ref=e831]:
+                      - generic [ref=e834]:
+                        - img
+                        - textbox "Town" [ref=e835]
+                        - img
+                      - generic [ref=e838]:
+                        - img
+                        - textbox "Area" [ref=e839]
+                        - img
+                      - generic [ref=e842]:
+                        - img
+                        - textbox "Governorate" [ref=e843]
+                        - img
+                      - generic [ref=e846]:
+                        - img
+                        - textbox "Postalcode" [ref=e847]
+                        - img
+                    - generic [ref=e850]:
+                      - img
+                      - textbox "Country" [ref=e851]
+                      - img
+  - generic [ref=e854]: No results found
+  - generic [ref=e857] [cursor=pointer]: Dr
+  - generic [ref=e860]: No results found
+  - generic [ref=e863]: No results found
+```
