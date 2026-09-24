@@ -79,9 +79,9 @@
                     - generic [ref=e115]: M
                     - generic [ref=e116]: 21Y 11M 08D
                     - generic [ref=e117]: MRN#JA01001367
-                - button "Checked In OP-100020040001 Allen 3 OP M 45Y 00M 07D MRN#JA01001320" [ref=e120]:
+                - button "Arrived OP-100020040001 Allen 3 OP M 45Y 00M 07D MRN#JA01001320" [ref=e120]:
                   - generic [ref=e121]:
-                    - generic [ref=e122]: Checked In
+                    - generic [ref=e122]: Arrived
                     - generic [ref=e123]: OP-100020040001
                   - generic [ref=e125]: Allen 3 OP
                   - generic [ref=e126]:
@@ -142,14 +142,14 @@
                     - generic [ref=e199]: F
                     - generic [ref=e200]: 22Y 00M 00D
                     - generic [ref=e201]: MRN#JA01001387
-                - button "Checked Out OP-100019970001 zx zxx xsd M 11H MRN#JA01001385" [ref=e204]:
+                - button "Checked Out OP-100019970001 zx zxx xsd M 12H MRN#JA01001385" [ref=e204]:
                   - generic [ref=e205]:
                     - generic [ref=e206]: Checked Out
                     - generic [ref=e207]: OP-100019970001
                   - generic [ref=e209]: zx zxx xsd
                   - generic [ref=e210]:
                     - generic [ref=e211]: M
-                    - generic [ref=e212]: 11H
+                    - generic [ref=e212]: 12H
                     - generic [ref=e213]: MRN#JA01001385
                 - button "Checked Out OP-100019960001 Madatory family Auto F 23Y 00M 00D MRN#JA01001384" [ref=e216]:
                   - generic [ref=e217]:
@@ -296,8 +296,8 @@
                     - group "Registration Date Time" [ref=e392]:
                       - button "Calendar Registration Date Time" [ref=e393] [cursor=pointer]:
                         - img
-                        - generic [ref=e394]: Sep 23, 2026 16:36
-                    - textbox [ref=e396]: 2026-09-23T16:36
+                        - generic [ref=e394]: Sep 23, 2026 18:14
+                    - textbox [ref=e396]: 2026-09-23T18:14
                 - generic [ref=e398]:
                   - generic [ref=e399]:
                     - paragraph [ref=e400]:

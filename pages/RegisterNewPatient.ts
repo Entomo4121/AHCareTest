@@ -88,7 +88,7 @@ export class RegisterNewPatient {
     this.firstnameTextBox = page.getByRole('textbox', { name: 'First Name', exact: true });
     this.secondnameTextBox = page.getByRole('textbox', { name: 'Second Name', exact: true });
     this.familynameTextBox = page.getByRole('textbox', { name: 'Family Name', exact: true });
-    this.localNameTextBox = page.getByRole('textbox', { name: 'First name', exact: true });
+    this.localNameTextBox = page.getByPlaceholder('Title');
     this.patientSeriesTextBox = page.getByPlaceholder('Select Series');
     this.preferredFacilityNameTextBox = page.getByPlaceholder('A FIRST Facility');
     this.RegistrationDateandTimeTextBox = page.locator('#react-aria3777826446-_r_25_');
@@ -171,7 +171,6 @@ export class RegisterNewPatient {
     await this.firstnameTextBox.fill(patientData.firstName);
     await this.secondnameTextBox.fill(patientData.secondName);
     await this.familynameTextBox.fill(patientData.familyName);
-    await this.localNameTextBox.fill(patientData.localName);
     await this.patientSeriesTextBox.click();
     await this.patientSeriesTextBox.fill(patientData.series);
     const uniqueNationalId = this.uniqueSuffix.padStart(10, '0');

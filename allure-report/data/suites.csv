@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","16718","login with valid user credentials","chromium","2026-09-11","passed","2026-09-11","","login_test.spec.ts","",""
+"","30294","login with valid user credentials","chromium","2026-09-23","broken","2026-09-23","","login_test.spec.ts","",""

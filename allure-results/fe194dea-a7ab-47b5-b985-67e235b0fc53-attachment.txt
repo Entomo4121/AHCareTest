@@ -1,14 +1,14 @@
 Successfully logged into adeahub
 Clicked on Patient Registration Button
 Selected Title as Dr
-Entered National ID as 0020217457
+Entered National ID as 0025350300
 Selected Gender as Male
 Selected Patient DOB as 150/5/15
 Selected Patient Marital Status as Single
 Selected Patient Residence as Urban
 Selected Patient Occupation as Private
-Entered Patient IQAMA ID as IQ20217457
-Entered Patient Mobile Number as ABCY202174
+Entered Patient IQAMA ID as IQ25350300
+Entered Patient Mobile Number as ABCY253503
 Entered Patient Passport Number as 2345678987
 Entered Patient Contact details as +966 0555123456 / patient.test@example.com
 Entered Patient Address as 123 Main St, Dammam, SAUDI
@@ -23,5 +23,6 @@ Clicked on Continue Button
 Selected Billing Group as Cash Patient
 Clicked on Continue Button
 Clicked on Create Patient's Account Button
-Captured Patient ID: JA01001286
+Captured Patient ID: JA01001392
 Patient Registration Completed Successfully.
+Patient ID captured and saved successfully.
