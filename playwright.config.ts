@@ -1,6 +1,7 @@
 /// <reference types="node" />
 
 import { defineConfig, devices } from '@playwright/test';
+import reportinglabs from './reporting-labs.config';
 
 /**
  * Read environment variables from file.
@@ -29,11 +30,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['allure-playwright', {
-      outputFolder: 'allure-results',
-      disableWebdriverStepsReporting: true,
-      disableMochaHooks: true,
-    }],
+    ['reporting-labs', reportinglabs]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -41,7 +38,14 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+        /* Capture a screenshot at the exact moment a test fails */
+    screenshot: 'only-on-failure',
+
+    /* Record video for all tests, but discard it for passing tests and only save it on failure */
+    video: 'retain-on-failure',
+    
     trace: 'on-first-retry',
+
   },
 
   /* Configure projects for major browsers */

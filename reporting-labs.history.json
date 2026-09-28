@@ -1,0 +1,179 @@
+[
+ {
+  "time": 1790412797803,
+  "duration": 32659.837999999996,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "f",
+    30094
+   ]
+  }
+ },
+ {
+  "time": 1790413239924,
+  "duration": 32559.268,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "f",
+    30059
+   ]
+  }
+ },
+ {
+  "time": 1790417524061,
+  "duration": 4993.613,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "p",
+    3062
+   ]
+  }
+ },
+ {
+  "time": 1790418353229,
+  "duration": 4676.244,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "p",
+    2887
+   ]
+  }
+ },
+ {
+  "time": 1790418802100,
+  "duration": 5667.23,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 1,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "p",
+    3251
+   ]
+  }
+ },
+ {
+  "time": 1790435364077,
+  "duration": 8180.723000000001,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "p",
+    5881
+   ],
+   "chromium::tests/login_test.spec.ts::login with invalid user credentials": [
+    "p",
+    653
+   ]
+  }
+ },
+ {
+  "time": 1790435605274,
+  "duration": 31.13000000000011,
+  "passed": 0,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 0,
+  "tests": {}
+ },
+ {
+  "time": 1790435691508,
+  "duration": 32058.28,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with invalid user credentials": [
+    "p",
+    665
+   ],
+   "chromium::tests/login_test.spec.ts::login with valid user credentials": [
+    "f",
+    30119
+   ]
+  }
+ },
+ {
+  "time": 1790571030592,
+  "duration": 35018.21799999999,
+  "passed": 3,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with invalid user credentials": [
+    "p",
+    2237
+   ],
+   "chromium::tests/login_test.spec.ts::login with invalid userid": [
+    "p",
+    2373
+   ],
+   "chromium::tests/login_test.spec.ts::login with invalid password": [
+    "p",
+    2083
+   ],
+   "chromium::tests/login_test.spec.ts::test 4: login with valid user credentials": [
+    "f",
+    30141
+   ]
+  }
+ },
+ {
+  "time": 1790571392944,
+  "duration": 37777.288,
+  "passed": 3,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::login with invalid user credentials": [
+    "p",
+    4365
+   ],
+   "chromium::tests/login_test.spec.ts::login with invalid userid": [
+    "p",
+    4528
+   ],
+   "chromium::tests/login_test.spec.ts::login with invalid password": [
+    "p",
+    3406
+   ],
+   "chromium::tests/login_test.spec.ts::test 4: login with valid user credentials": [
+    "f",
+    31101
+   ]
+  }
+ }
+]
