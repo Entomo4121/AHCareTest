@@ -22,7 +22,7 @@ const config: ReportingLabsOptions = {
   // ── Header details ───────────────────────────────────────────────────────────
   // project: { name: 'ShopLite Web', version: '2.4.0', team: 'QA Platform', url: 'https://shoplite.example.com', description: '' },
   metadata: {                                         // chips in the header; `build` also labels the run in the trend
-    env: process.env.TEST_ENV ?? 'local',
+    env: (globalThis as typeof globalThis & { process?: { env?: Record<string, string | undefined> } }).process?.env?.TEST_ENV ?? 'local',
     // build: process.env.BUILD_NUMBER ?? 'local',     // when missing, the CI run number is used
     // branch: process.env.GIT_BRANCH ?? 'main',
   },

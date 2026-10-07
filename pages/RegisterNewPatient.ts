@@ -34,7 +34,8 @@ export class RegisterNewPatient {
   readonly page: Page;
 
   // Tab 1: Patient's details
-  
+  readonly selectCurrentLocationButton: Locator;
+  readonly localLocationNameOption: Locator;
   readonly patientRegistrationButton: Locator;
   readonly titleTextBox: Locator;
   readonly firstnameTextBox: Locator;
@@ -81,6 +82,8 @@ export class RegisterNewPatient {
   constructor(page: Page) {
     this.page = page;
 
+    this.selectCurrentLocationButton = page.getByText('Current location');
+    this.localLocationNameOption = page.getByText('FO', { exact: true });
     this.patientRegistrationButton = page.getByText('Register New Patient');
     this.titleTextBox = page.getByRole("textbox", {
       name: /Prefix|Title/i
@@ -156,6 +159,20 @@ export class RegisterNewPatient {
       await this.page.getByRole('button', { name: 'OK' }).click();
       await this.page.getByRole('textbox', { name: 'Employment ID' }).fill('');
     }
+  }
+
+  async selectCurrentLocation() {
+    await this.selectCurrentLocationButton.click();
+    console.log('Clicked on Current Location Button');
+  }
+
+  async selectLocalLocationName() {
+    await this.localLocationNameOption.click();
+    console.log('Selected Location Name as FO');
+  }
+
+  async selectLocationName() {
+    await this.selectLocalLocationName();
   }
 
   async clickPatientRegistrationButton() {
