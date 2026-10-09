@@ -4,7 +4,7 @@ declare const __dirname: string;
 const fs = require('node:fs');
 const path = require('node:path');
 
-import {Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 import patientData from '../TestData/patientRegistrationData.json';
 
 const patientIdDetailsPath = path.resolve(__dirname, '../utils/provider/patientIdDetails.json');
@@ -41,7 +41,10 @@ export class RegisterNewPatient {
   readonly firstnameTextBox: Locator;
   readonly secondnameTextBox: Locator;
   readonly familynameTextBox: Locator;
-  readonly localNameTextBox: Locator;
+  readonly localNamePrefixTextBox: Locator;
+  readonly localFirstNameTextBox: Locator;
+  readonly localFamilyNameTextBox: Locator;
+  readonly localSecondNameTextBox: Locator;
   readonly patientSeriesTextBox: Locator;
   readonly preferredFacilityNameTextBox: Locator;
   readonly RegistrationDateandTimeTextBox: Locator;
@@ -58,6 +61,7 @@ export class RegisterNewPatient {
   readonly patientIQAMAIDTextBox: Locator;
   readonly patientMobileNumberTextBox: Locator;
   readonly patientPassportNumberTextBox: Locator;
+  readonly patientMembershipSelect: Locator;
   readonly patientContactCountryCodeTextBox: Locator;
   readonly patientContactPhoneTextBox: Locator;
   readonly patientContactEmailTextBox: Locator;
@@ -79,6 +83,8 @@ export class RegisterNewPatient {
   // Tab 5: Review & Confirm
   readonly createPatientAccountButton: Locator;
 
+
+  //-------------Page Locators -----------//
   constructor(page: Page) {
     this.page = page;
 
@@ -91,7 +97,10 @@ export class RegisterNewPatient {
     this.firstnameTextBox = page.getByRole('textbox', { name: 'First Name', exact: true });
     this.secondnameTextBox = page.getByRole('textbox', { name: 'Second Name', exact: true });
     this.familynameTextBox = page.getByRole('textbox', { name: 'Family Name', exact: true });
-    this.localNameTextBox = page.getByPlaceholder('Title');
+    this.localNamePrefixTextBox = page.getByRole('textbox', { name: 'Title', exact: true }).nth(1);
+    this.localFirstNameTextBox = page.getByRole('textbox', { name: 'Loc First Name', exact: true });
+    this.localFamilyNameTextBox = page.getByRole('textbox', { name: 'Loc Family Name', exact: true });
+    this.localSecondNameTextBox = page.getByRole('textbox', { name: 'Loc Second Name', exact: true });
     this.patientSeriesTextBox = page.getByPlaceholder('Select Series');
     this.preferredFacilityNameTextBox = page.getByPlaceholder('A FIRST Facility');
     this.RegistrationDateandTimeTextBox = page.locator('#react-aria3777826446-_r_25_');
@@ -110,6 +119,7 @@ export class RegisterNewPatient {
     this.patientIQAMAIDTextBox = page.getByRole('textbox', { name: 'IQAMA / ID #' });
     this.patientMobileNumberTextBox = page.getByRole('textbox', { name: 'MOBILE #' });
     this.patientPassportNumberTextBox = page.locator('#altId3Number');
+    this.patientMembershipSelect = page.locator('select[name="membership"]');
     this.patientContactCountryCodeTextBox = page.getByRole('textbox', { name: 'Select code' }).first();
     this.patientContactPhoneTextBox = page.getByRole('textbox', { name: 'Phone number' }).first();
     this.patientContactEmailTextBox = page.getByRole('textbox', { name: 'Email address' });
@@ -140,7 +150,7 @@ export class RegisterNewPatient {
     await field.click();
     await field.fill('');
     // Type-then-backspace reliably triggers the dropdown's filter/open request even with no search text.
-    await field.pressSequentially(searchText || ' ', { delay: 50 });
+    await field.pressSequentially(searchText || ' ', { delay: 60 });
     if (!searchText) {
       await field.press('Backspace');
     }
@@ -160,6 +170,9 @@ export class RegisterNewPatient {
       await this.page.getByRole('textbox', { name: 'Employment ID' }).fill('');
     }
   }
+
+
+  //-----------------Page Actions -------------------//
 
   async selectCurrentLocation() {
     await this.selectCurrentLocationButton.click();
@@ -183,11 +196,23 @@ export class RegisterNewPatient {
     await this.selectFromDropdown(this.titleTextBox, 'Dr', 'Dr');
     console.log('Selected Title as Dr');
   }
-
   async enterPatientDetails() {
     await this.firstnameTextBox.fill(patientData.firstName);
     await this.secondnameTextBox.fill(patientData.secondName);
     await this.familynameTextBox.fill(patientData.familyName);
+
+
+    // Local name selection //
+    await this.selectFromDropdown(this.localNamePrefixTextBox, 'Eng', 'Eng');
+    console.log('Selected Local Name Prefix as Eng');
+    await this.localFirstNameTextBox.fill(patientData.firstNameLocal);
+    console.log(`Entered Local First Name as ${patientData.firstNameLocal}`);
+    await this.localFamilyNameTextBox.fill(patientData.familyNameLocal);
+    console.log(`Entered Local Family Name as ${patientData.familyNameLocal}`);
+    await this.localSecondNameTextBox.fill(patientData.secondNameLocal);
+    console.log(`Entered Local Second Name as ${patientData.secondNameLocal}`);
+
+
     await this.patientSeriesTextBox.click();
     await this.patientSeriesTextBox.fill(patientData.series);
     const uniqueNationalId = this.uniqueSuffix.padStart(10, '0');
@@ -228,6 +253,9 @@ export class RegisterNewPatient {
     // into the numeric-only Employment ID field, triggering a blocking "Alphabets not allowed"
     // alert. Guard every subsequent interaction against it.
     // await this.dismissEmploymentIdValidationAlert();
+
+    await this.patientMembershipSelect.selectOption({ label: patientData.membershipId });
+    console.log(`Selected Patient Membership ID as ${patientData.membershipId}`);
 
     await this.selectFromDropdown(this.patientContactCountryCodeTextBox, patientData.contactCountryCode, `SA (${patientData.contactCountryCode})`);
     await this.patientContactPhoneTextBox.fill(patientData.contactPhoneNumber);

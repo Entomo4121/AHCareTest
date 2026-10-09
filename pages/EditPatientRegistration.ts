@@ -48,6 +48,7 @@ export class EditPatientRegistration {
             name: `${patientData.firstName} ${patientData.secondName} ${patientData.familyName}`,
             exact: true,
         });
+        
         await patientNameResult.waitFor({ state: 'visible' });
         await patientNameResult.click();
         await this.editButton.click();

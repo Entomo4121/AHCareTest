@@ -25,51 +25,51 @@ test('Test 3: login with invalid password', async ({ page }) => {
   console.log('Test 3: login with invalid password');
 });
 
-test('Test 4: login with valid user credentials and RegisterPatient', async ({ page }) => {
-  meta({ priority: 'P1', severity: 'Major Blocker', feature: 'RegisterPatient', owner: 'Ravi Kumar' , story: 'EMM-751' });
-  const loginPage = new LoginPage(page);
-  const registerNewPatient = new RegisterNewPatient(page);
-  await loginPage.gotoLoginPage();
-  await loginPage.login(username, password);
-  await loginPage.verifyLoginSuccess();
-  await registerNewPatient.selectCurrentLocation();
-  await registerNewPatient.selectLocalLocationName();
-  await registerNewPatient.clickPatientRegistrationButton();
-  await registerNewPatient.selectTitle();
-
-  // Tab 1: Patient's details
-  await registerNewPatient.enterPatientDetails();
-  await registerNewPatient.continueToNextTab();
-
-  // Tab 2: Next of Kin
-  await registerNewPatient.fillNextOfKinDetails();
-  await registerNewPatient.continueToNextTab();
-
-  // Tab 3: Documents (no mandatory fields beyond defaults)
-  await registerNewPatient.continueToNextTab();
-
-  // Tab 4: Payer Group
-  await registerNewPatient.selectBillingGroup();
-  await registerNewPatient.continueToNextTab();
-
-  // Tab 5: Review & Confirm
-  await registerNewPatient.createPatientAccount();
-  await registerNewPatient.captureAndSavePatientId();
-  console.log('Patient Registration Completed Successfully.');
-  console.log('Patient ID Captured and Saved Successfully.');
-});
-
-// test('Test 4: login and open the latest patientID for editing', async ({ page }) => {
-//   meta({ priority: 'P1', severity: 'Major Blocker', feature: 'EditPatient', owner: 'Ravi Kumar', story: 'EMM-751' });
+// test('Test 4: login with valid user credentials and RegisterPatient', async ({ page }) => {
+//   meta({ priority: 'P1', severity: 'Major Blocker', feature: 'RegisterPatient', owner: 'Ravi Kumar' , story: 'EMM-751' });
 //   const loginPage = new LoginPage(page);
-//   const editPatientRegistration = new EditPatientRegistration(page);
-
+//   const registerNewPatient = new RegisterNewPatient(page);
 //   await loginPage.gotoLoginPage();
 //   await loginPage.login(username, password);
 //   await loginPage.verifyLoginSuccess();
-//   const patientId = await editPatientRegistration.openLatestPatientForEdit();
-//   console.log(`Opened patient ${patientId} for editing.`);
+//   await registerNewPatient.selectCurrentLocation();
+//   await registerNewPatient.selectLocalLocationName();
+//   await registerNewPatient.clickPatientRegistrationButton();
+//   await registerNewPatient.selectTitle();
+
+//   // Tab 1: Patient's details
+//   await registerNewPatient.enterPatientDetails();
+//   await registerNewPatient.continueToNextTab();
+
+//   // Tab 2: Next of Kin
+//   await registerNewPatient.fillNextOfKinDetails();
+//   await registerNewPatient.continueToNextTab();
+
+//   // Tab 3: Documents (no mandatory fields beyond defaults)
+//   await registerNewPatient.continueToNextTab();
+
+//   // Tab 4: Payer Group
+//   await registerNewPatient.selectBillingGroup();
+//   await registerNewPatient.continueToNextTab();
+
+//   // Tab 5: Review & Confirm
+//   await registerNewPatient.createPatientAccount();
+//   await registerNewPatient.captureAndSavePatientId();
+//   console.log('Patient Registration Completed Successfully.');
+//   console.log('Patient ID Captured and Saved Successfully.');
 // });
+
+test('Test 4: login and open the latest patientID for editing', async ({ page }) => {
+  meta({ priority: 'P1', severity: 'Major Blocker', feature: 'EditPatient', owner: 'Ravi Kumar', story: 'EMM-751' });
+  const loginPage = new LoginPage(page);
+  const editPatientRegistration = new EditPatientRegistration(page);
+
+  await loginPage.gotoLoginPage();
+  await loginPage.login(username, password);
+  await loginPage.verifyLoginSuccess();
+  const patientId = await editPatientRegistration.openLatestPatientForEdit();
+  console.log(`Opened patient ${patientId} for editing.`);
+});
 
 
 
