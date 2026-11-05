@@ -24,7 +24,7 @@ export class EditPatientRegistration {
         });
         this.editButton = page
             .locator('p', { hasText: "Patient's Details" })
-            .locator('xpath=..')
+            .locator('xpath=../..')
             .getByRole('button', { name: 'Edit', exact: true })
             .first();
     }
@@ -34,25 +34,47 @@ export class EditPatientRegistration {
     }
 
     async openLatestPatientForEdit(): Promise<string> {
-        const latestPatient = [...patientIdDetails].sort(
+        const patientsNewestFirst = [...patientIdDetails].sort(
             (first, second) => Date.parse(second.capturedAt) - Date.parse(first.capturedAt),
-        )[0];
-
-        if (!latestPatient) {
+        );
+        if (patientsNewestFirst.length === 0) {
             throw new Error('No patient ID was found in patientIdDetails.json');
         }
 
-        await this.patientSearchInput.fill('');
-        await this.patientSearchInput.pressSequentially(latestPatient.patientId, { delay: 100 });
+        const patientFullName = [
+            patientData.title,
+            patientData.firstName,
+            patientData.secondName,
+            patientData.familyName,
+        ]
+            .filter(Boolean)
+            .join(' ');
         const patientNameResult = this.page.getByRole('button', {
-            name: `${patientData.firstName} ${patientData.secondName} ${patientData.familyName}`,
+            name: patientFullName,
             exact: true,
         });
-        
-        await patientNameResult.waitFor({ state: 'visible' });
+        const noRecordsMessage = this.page.getByText('No Records Found', { exact: true });
+
+        let latestAvailablePatient: (typeof patientIdDetails)[number] | undefined;
+        for (const patient of patientsNewestFirst) {
+            await this.patientSearchInput.fill(patient.patientId);
+            await patientNameResult.or(noRecordsMessage).waitFor({
+                state: 'visible',
+                timeout: 3_000,
+            });
+            if (await patientNameResult.isVisible()) {
+                latestAvailablePatient = patient;
+                break;
+            }
+        }
+
+        if (!latestAvailablePatient) {
+            throw new Error('None of the patient IDs in patientIdDetails.json could be found');
+        }
+
         await patientNameResult.click();
         await this.editButton.click();
         await this.firstNameInput.fill(editPatientdata.firstNameEdit);
-        return latestPatient.patientId;
+        return latestAvailablePatient.patientId;
     }
 }

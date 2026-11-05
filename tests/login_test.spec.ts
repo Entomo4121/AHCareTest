@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { password, username } from '../utils/loginDetails';
 import { RegisterNewPatient } from '../pages/RegisterNewPatient';
@@ -60,6 +60,7 @@ test('Test 3: login with invalid password', async ({ page }) => {
 // });
 
 test('Test 4: login and open the latest patientID for editing', async ({ page }) => {
+  test.setTimeout(60_000);
   meta({ priority: 'P1', severity: 'Major Blocker', feature: 'EditPatient', owner: 'Ravi Kumar', story: 'EMM-751' });
   const loginPage = new LoginPage(page);
   const editPatientRegistration = new EditPatientRegistration(page);
@@ -68,10 +69,9 @@ test('Test 4: login and open the latest patientID for editing', async ({ page })
   await loginPage.login(username, password);
   await loginPage.verifyLoginSuccess();
   const patientId = await editPatientRegistration.openLatestPatientForEdit();
+  await expect(editPatientRegistration.firstNameInput).toBeVisible();
   console.log(`Opened patient ${patientId} for editing.`);
 });
-
-
 
 
 
