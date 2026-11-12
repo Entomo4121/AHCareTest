@@ -9,6 +9,7 @@ The framework is built to:
 - automate login flows then followed by all modules of AHCare
 - validate page navigation and UI actions
 - register new patient records using page objects
+- schedule appointments for the latest recorded patient using page objects
 - reuse test data from JSON files
 - generate test reports using Playwright HTML and Allure
 - run tests across multiple browsers
@@ -51,6 +52,7 @@ PWTestDemo/
 ├── allure-results/
 │   └── raw Allure test result files
 ├── pages/
+│   ├── Appointment.ts
 │   ├── LoginPage.ts
 │   └── RegisterNewPatient.ts
 ├── scripts/
@@ -80,7 +82,7 @@ PWTestDemo/
 
 | Folder / File | Purpose |
 | --- | --- |
-| `pages/` | Contains reusable page object classes for login and patient registration flows. |
+| `pages/` | Contains reusable page object classes for login, patient registration, and appointment flows. |
 | `tests/` | Contains Playwright test specs for execution. |
 | `utils/` | Stores shared constants like login URL, username, and password. |
 | `TestData/` | Stores JSON test input used for patient registration scenarios. |
@@ -155,6 +157,14 @@ It includes actions such as:
 - filling patient personal details and metadata
 - capturing a screenshot after entering key data
 - continuing the registration flow
+
+### `pages/Appointment.ts`
+
+This page object searches for the latest patient ID recorded in
+`utils/provider/patientIdDetails.json`, opens that patient's appointment workflow,
+and books an appointment using caller-provided location, visit type,
+physician/equipment, service, and slot selections. Log in first with `LoginPage`;
+the page object does not contain credentials or perform a login itself.
 
 ### `utils/loginDetails.ts`
 
