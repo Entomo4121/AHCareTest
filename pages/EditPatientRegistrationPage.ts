@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { expect, Locator, Page } from '@playwright/test';
 import editPatientdata from '../TestData/EditPatintRegistrationData.json';
 import patientData from '../TestData/patientRegistrationData.json';
 import patientIdDetails from '../utils/provider/patientIdDetails.json';
@@ -11,6 +11,8 @@ export class EditPatientRegistration {
     readonly familyNameInput: Locator;
     readonly patientSearchInput: Locator;
     readonly editButton: Locator;
+    readonly civilIdInput: Locator;
+    readonly saveButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -27,6 +29,13 @@ export class EditPatientRegistration {
             .locator('xpath=../..')
             .getByRole('button', { name: 'Edit', exact: true })
             .first();
+        this.civilIdInput = page.getByRole('textbox', { name: 'CIVIL ID', exact: true });
+        // Several sections have a Save button (e.g. File Storage has Reset + Save). Patient's Details
+        // is the one that sits next to Close. Role-based, since generated react-aria ids change per render.
+        this.saveButton = page
+            .getByRole('button', { name: 'Close', exact: true })
+            .locator('xpath=..')
+            .getByRole('button', { name: 'Save', exact: true });
     }
 
     async editPatientName() {
@@ -41,17 +50,15 @@ export class EditPatientRegistration {
             throw new Error('No patient ID was found in patientIdDetails.json');
         }
 
+        // Search results show "<prefix> <first> <second> <family>"; match on the name only,
+        // since the prefix saved in the application can differ from the test data title.
         const patientFullName = [
-            patientData.title,
             patientData.firstName,
             patientData.secondName,
             patientData.familyName,
-        ]
-            .filter(Boolean)
-            .join(' ');
+        ].join(' ');
         const patientNameResult = this.page.getByRole('button', {
-            name: patientFullName,
-            exact: true,
+            name: new RegExp(`${patientFullName}$`),
         });
         const noRecordsMessage = this.page.getByText('No Records Found', { exact: true });
 
@@ -74,7 +81,25 @@ export class EditPatientRegistration {
 
         await patientNameResult.click();
         await this.editButton.click();
-        await this.firstNameInput.fill(editPatientdata.firstNameEdit);
+        await expect(this.civilIdInput).toBeVisible();
         return latestAvailablePatient.patientId;
+    }
+
+    /** Runs the complete edit flow in one call: open the latest patient, change CIVIL ID, save. */
+    async editLatestPatient(): Promise<string> {
+        const patientId = await this.openLatestPatientForEdit();
+        await this.editCivilIdAndSave();
+        return patientId;
+    }
+
+    /** Replaces the CIVIL ID (10 digits max) with a unique per-run value and saves the patient. */
+    async editCivilIdAndSave(): Promise<string> {
+        const newCivilId = Date.now().toString().slice(-10);
+        await this.civilIdInput.fill(newCivilId);
+        await expect(this.civilIdInput).toHaveValue(newCivilId);
+        await expect(this.saveButton).toHaveCount(1); // must be unique
+        await this.saveButton.click();
+        console.log(`Edited CIVIL ID to ${newCivilId} and clicked Save`);
+        return newCivilId;
     }
 }

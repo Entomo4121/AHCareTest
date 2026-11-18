@@ -34,5 +34,57 @@
   {
     "patientId": "JA01001392",
     "capturedAt": "2026-09-24T04:49:34.128Z"
+  },
+  {
+    "patientId": "JA01001843",
+    "capturedAt": "2026-11-16T09:44:03.909Z"
+  },
+  {
+    "patientId": "JA01001844",
+    "capturedAt": "2026-11-16T09:52:34.941Z"
+  },
+  {
+    "patientId": "JA01001845",
+    "capturedAt": "2026-11-16T09:57:17.115Z"
+  },
+  {
+    "patientId": "JA01001847",
+    "capturedAt": "2026-11-16T10:10:50.259Z"
+  },
+  {
+    "patientId": "JA01001848",
+    "capturedAt": "2026-11-16T10:13:44.170Z"
+  },
+  {
+    "patientId": "JA01001849",
+    "capturedAt": "2026-11-16T10:16:34.008Z"
+  },
+  {
+    "patientId": "JA01001850",
+    "capturedAt": "2026-11-16T10:28:29.265Z"
+  },
+  {
+    "patientId": "JA01001851",
+    "capturedAt": "2026-11-16T10:38:54.497Z"
+  },
+  {
+    "patientId": "JA01001852",
+    "capturedAt": "2026-11-16T10:44:00.621Z"
+  },
+  {
+    "patientId": "JA01001853",
+    "capturedAt": "2026-11-16T10:46:14.724Z"
+  },
+  {
+    "patientId": "JA01001854",
+    "capturedAt": "2026-11-16T10:53:23.558Z"
+  },
+  {
+    "patientId": "JA01001855",
+    "capturedAt": "2026-11-16T11:07:24.091Z"
+  },
+  {
+    "patientId": "JA01001861",
+    "capturedAt": "2026-11-18T06:03:42.939Z"
   }
 ]

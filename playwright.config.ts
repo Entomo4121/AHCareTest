@@ -52,17 +52,23 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        // Maximized window: disable the fixed viewport so the page follows the window size.
+        viewport: null,
+        deviceScaleFactor: undefined, // not allowed together with a null viewport
+        launchOptions: { args: ['--start-maximized'] },
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'], viewport: null, deviceScaleFactor: undefined },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'], viewport: null, deviceScaleFactor: undefined },
     },
 
     /* Test against mobile viewports. */

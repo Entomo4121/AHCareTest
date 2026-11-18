@@ -1,557 +1,5 @@
 [
  {
-  "time": 1791352983281,
-  "duration": 18462.366,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    3051
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    3933
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    3700
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    12430
-   ]
-  }
- },
- {
-  "time": 1791353130731,
-  "duration": 34638.330000000016,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30233
-   ]
-  }
- },
- {
-  "time": 1791353277533,
-  "duration": 36504.638,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    3202
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    3859
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    3913
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30836
-   ]
-  }
- },
- {
-  "time": 1791353459620,
-  "duration": 37765.077999999994,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    3535
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4292
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    3491
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30655
-   ]
-  }
- },
- {
-  "time": 1791353576586,
-  "duration": 36351.049,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    2477
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    3051
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    4216
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30689
-   ]
-  }
- },
- {
-  "time": 1791353690206,
-  "duration": 36767.413,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    3312
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4263
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    4036
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    31237
-   ]
-  }
- },
- {
-  "time": 1791353859951,
-  "duration": 37472.168000000005,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    4074
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4385
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    4984
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30698
-   ]
-  }
- },
- {
-  "time": 1791354079146,
-  "duration": 34209.9850000001,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30214
-   ]
-  }
- },
- {
-  "time": 1791354137723,
-  "duration": 25799.262,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    4781
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4204
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    4281
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    18691
-   ]
-  }
- },
- {
-  "time": 1791354276292,
-  "duration": 22200.234,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    4316
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    3840
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    4193
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    19194
-   ]
-  }
- },
- {
-  "time": 1791354477308,
-  "duration": 32714.529999999795,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30229
-   ]
-  }
- },
- {
-  "time": 1791354538269,
-  "duration": 33404.08,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    1410
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    1517
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    1903
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30688
-   ]
-  }
- },
- {
-  "time": 1791357573212,
-  "duration": 33626.92600000001,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    1899
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    1866
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    1857
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30810
-   ]
-  }
- },
- {
-  "time": 1791357756262,
-  "duration": 34027.278999999995,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    2109
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    763
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    1957
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30607
-   ]
-  }
- },
- {
-  "time": 1791431058929,
-  "duration": 42711.647,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    6032
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    5761
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    7795
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    31458
-   ]
-  }
- },
- {
-  "time": 1791522238259,
-  "duration": 33780.886,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    2016
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    1992
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    2366
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
-    "f",
-    30561
-   ]
-  }
- },
- {
-  "time": 1791955005173,
-  "duration": 36894.426,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    4215
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4742
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    5112
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    30723
-   ]
-  }
- },
- {
-  "time": 1793773815616,
-  "duration": 37509.331,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    2125
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    2064
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    2111
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    31634
-   ]
-  }
- },
- {
-  "time": 1793774305180,
-  "duration": 31903.203999999998,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    30220
-   ]
-  }
- },
- {
-  "time": 1793774365407,
-  "duration": 32822.069,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    31120
-   ]
-  }
- },
- {
-  "time": 1793774414925,
-  "duration": 10890.234,
-  "passed": 1,
-  "failed": 0,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "p",
-    8789
-   ]
-  }
- },
- {
-  "time": 1793774452896,
-  "duration": 35819.164000000004,
-  "passed": 3,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 4,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
-    "p",
-    4092
-   ],
-   "chromium::tests/login_test.spec.ts::Test 2: login with invalid userid": [
-    "p",
-    4604
-   ],
-   "chromium::tests/login_test.spec.ts::Test 3: login with invalid password": [
-    "p",
-    3742
-   ],
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    30388
-   ]
-  }
- },
- {
-  "time": 1793774539473,
-  "duration": 62873.009999999995,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    60178
-   ]
-  }
- },
- {
-  "time": 1793774647053,
-  "duration": 14707.928,
-  "passed": 0,
-  "failed": 1,
-  "flaky": 0,
-  "skipped": 0,
-  "total": 1,
-  "tests": {
-   "chromium::tests/login_test.spec.ts::Test 4: login and open the latest patientID for editing": [
-    "f",
-    11953
-   ]
-  }
- },
- {
   "time": 1793775786238,
   "duration": 10957.879,
   "passed": 4,
@@ -718,6 +166,526 @@
    "chromium::tests/login_test.spec.ts::Test 6: login and open the latest patientID for appointment booking": [
     "f",
     61165
+   ]
+  }
+ },
+ {
+  "time": 1794458646913,
+  "duration": 68590.16500000001,
+  "passed": 3,
+  "failed": 3,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 6,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
+    "p",
+    1557
+   ],
+   "chromium::tests/login_test.spec.ts::Test 2: login with valid userid and test the build": [
+    "p",
+    912
+   ],
+   "chromium::tests/login_test.spec.ts::Test 3: login with valid credentials and navigate to home page": [
+    "p",
+    1698
+   ],
+   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
+    "f",
+    30936
+   ],
+   "chromium::tests/login_test.spec.ts::Test 5: login and open the latest patientID for editing": [
+    "f",
+    11930
+   ],
+   "chromium::tests/login_test.spec.ts::Test 6: login and open the latest patientID for appointment booking": [
+    "f",
+    62916
+   ]
+  }
+ },
+ {
+  "time": 1794458963705,
+  "duration": 71604.67700000001,
+  "passed": 3,
+  "failed": 3,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 6,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
+    "p",
+    2746
+   ],
+   "chromium::tests/login_test.spec.ts::Test 2: login with valid userid and test the build": [
+    "p",
+    2765
+   ],
+   "chromium::tests/login_test.spec.ts::Test 3: login with valid credentials and navigate to home page": [
+    "p",
+    2896
+   ],
+   "chromium::tests/login_test.spec.ts::Test 4: login with valid user credentials and RegisterPatient": [
+    "f",
+    31115
+   ],
+   "chromium::tests/login_test.spec.ts::Test 5: login and open the latest patientID for editing": [
+    "f",
+    14203
+   ],
+   "chromium::tests/login_test.spec.ts::Test 6: login and open the latest patientID for appointment booking": [
+    "f",
+    64684
+   ]
+  }
+ },
+ {
+  "time": 1794563414218,
+  "duration": 126248.18599999999,
+  "passed": 3,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 4,
+  "tests": {
+   "chromium::tests/login_test.spec.ts::Test 1: login with invalid user credentials": [
+    "p",
+    1207
+   ],
+   "chromium::tests/login_test.spec.ts::Test 2: login with valid userid and test the build": [
+    "p",
+    2010
+   ],
+   "chromium::tests/login_test.spec.ts::Test 3: login with valid credentials and navigate to home page": [
+    "p",
+    2191
+   ],
+   "chromium::tests/login_test.spec.ts::Test 7: rapid registration of a new patient (Citizen)": [
+    "f",
+    123156
+   ]
+  }
+ },
+ {
+  "time": 1794813365138,
+  "duration": 124168.93,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    120363
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794814282464,
+  "duration": 124100.559,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    120359
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794814516325,
+  "duration": 124034.476,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    120283
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794821612641,
+  "duration": 123854.61499999999,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    120310
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794821751606,
+  "duration": 82382.602,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    78588
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794822214626,
+  "duration": 90190.67599999999,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    26303
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    60288
+   ]
+  }
+ },
+ {
+  "time": 1794822728638,
+  "duration": 86047.641,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    23155
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    59125
+   ]
+  }
+ },
+ {
+  "time": 1794823010608,
+  "duration": 68396.127,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    23480
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    41251
+   ]
+  }
+ },
+ {
+  "time": 1794823256513,
+  "duration": 1789.057,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    1
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794823272984,
+  "duration": 1661.0749999999998,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    3
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794823325000,
+  "duration": 2734.669,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    2
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794823824514,
+  "duration": 86672.653,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    22576
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    60231
+   ]
+  }
+ },
+ {
+  "time": 1794823999271,
+  "duration": 86083.68000000001,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    22225
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    60232
+   ]
+  }
+ },
+ {
+  "time": 1794824169760,
+  "duration": 28974.557,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    21306
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    3137
+   ]
+  }
+ },
+ {
+  "time": 1794824883755,
+  "duration": 29740.293999999998,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    22110
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "p",
+    1838
+   ]
+  }
+ },
+ {
+  "time": 1794825509860,
+  "duration": 29243.399999999998,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    22478
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    2349
+   ]
+  }
+ },
+ {
+  "time": 1794825813256,
+  "duration": 34001.909,
+  "passed": 0,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "f",
+    27359
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "s",
+    0
+   ]
+  }
+ },
+ {
+  "time": 1794825948710,
+  "duration": 88179.383,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    22141
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "f",
+    60246
+   ]
+  }
+ },
+ {
+  "time": 1794826380466,
+  "duration": 26899.324,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    20292
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "p",
+    1856
+   ]
+  }
+ },
+ {
+  "time": 1794827217349,
+  "duration": 29636.86,
+  "passed": 5,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 5,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 1: login with invalid user credentials": [
+    "p",
+    583
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 2: login with valid userid and test the build": [
+    "p",
+    436
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 3: login with valid credentials and navigate to home page": [
+    "p",
+    429
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    23044
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "p",
+    1553
+   ]
+  }
+ },
+ {
+  "time": 1794981719272,
+  "duration": 129673.33799999999,
+  "passed": 5,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 5,
+  "tests": {
+   "chromium::tests/patient_modules.spec.ts::Test 1: login with invalid user credentials": [
+    "p",
+    9310
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 2: login with valid userid and test the build": [
+    "p",
+    5476
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 3: login with valid credentials and navigate to home page": [
+    "p",
+    4112
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 4: register a new patient": [
+    "p",
+    54612
+   ],
+   "chromium::tests/patient_modules.spec.ts::Test 5: open the latest patient for editing": [
+    "p",
+    6188
    ]
   }
  }

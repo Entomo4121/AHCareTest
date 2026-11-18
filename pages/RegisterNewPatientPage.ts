@@ -55,9 +55,7 @@ export class RegisterNewPatient {
   readonly patientDOMbutton: Locator;
   readonly patientdobDaybutton: Locator;
   readonly patientMaritalStatusDropdown: Locator;
-  readonly patientResidenceTextBox: Locator;
   readonly patientNationalityDropdown: Locator;
-  readonly patientOccupationDropdown: Locator;
   readonly patientIQAMAIDTextBox: Locator;
   readonly patientMobileNumberTextBox: Locator;
   readonly patientPassportNumberTextBox: Locator;
@@ -111,15 +109,14 @@ export class RegisterNewPatient {
     this.patientDOMbutton = page.locator('#ageMonths');
     this.patientdobDaybutton = page.locator('#ageDays');
     this.patientMaritalStatusDropdown = page.getByRole('textbox', { name: 'Marital Status' });
-    this.patientResidenceTextBox = page.locator('//*[@id="residencyStatus"]/button[1]');
     this.patientNationalityDropdown = page.getByRole('textbox', { name: 'Nationality' });
-    this.patientOccupationDropdown = page.getByRole('textbox', { name: 'Occupation' }).first();
     // Role-based locators (not id, which is briefly duplicated with the Employment ID field
     // right after switching residency status to Non-Citizen).
-    this.patientIQAMAIDTextBox = page.getByRole('textbox', { name: 'IQAMA / ID #' });
-    this.patientMobileNumberTextBox = page.getByRole('textbox', { name: 'MOBILE #' });
-    this.patientPassportNumberTextBox = page.locator('#altId3Number');
-    this.patientMembershipSelect = page.locator('select[name="membership"]');
+    this.patientIQAMAIDTextBox = page.locator('#altId1Number');
+    this.patientMobileNumberTextBox = page.locator('#altId2Number');
+    this.patientPassportNumberTextBox = page.getByPlaceholder('PASSPORT #', { exact: true });
+    // Visible react-aria Select button (the native <select name="membership"> is a hidden mirror).
+    this.patientMembershipSelect = page.locator('button#membership');
     this.patientContactCountryCodeTextBox = page.getByRole('textbox', { name: 'Select code' }).first();
     this.patientContactPhoneTextBox = page.getByRole('textbox', { name: 'Phone number' }).first();
     this.patientContactEmailTextBox = page.getByRole('textbox', { name: 'Email address' });
@@ -159,6 +156,13 @@ export class RegisterNewPatient {
     // A previous dropdown's popup can still be mid-close-animation and intercept pointer events
     // here, so force the click since the target element itself is already correctly resolved.
     await option.click({ force: true });
+  }
+
+  /** Membership is a custom listbox: open it, then pick the option from the open listbox. */
+  private async selectMembership(label: string) {
+    await this.patientMembershipSelect.scrollIntoViewIfNeeded();
+    await this.patientMembershipSelect.click();
+    await this.page.getByRole('listbox').getByRole('option', { name: label, exact: true }).click();
   }
 
   /** Dismisses the "Alphabets and Special Characters not allowed" alert and clears the
@@ -230,13 +234,6 @@ export class RegisterNewPatient {
     await this.selectFromDropdown(this.patientMaritalStatusDropdown, patientData.maritalStatus, patientData.maritalStatus);
     console.log(`Selected Patient Marital Status as ${patientData.maritalStatus}`);
 
-    await this.patientResidenceTextBox.click();
-    console.log(`Selected Patient Residence as ${patientData.residenceStatus}`);
-
-    // Citizen keeps the default Nationality (SAUDI); no re-selection needed here.
-    await this.selectFromDropdown(this.patientOccupationDropdown, patientData.occupation, patientData.occupation);
-    console.log(`Selected Patient Occupation as ${patientData.occupation}`);
-
     const uniqueIqamaId = `IQ${this.uniqueSuffix}`;
     await this.patientIQAMAIDTextBox.fill(uniqueIqamaId);
     console.log(`Entered Patient IQAMA ID as ${uniqueIqamaId}`);
@@ -254,7 +251,7 @@ export class RegisterNewPatient {
     // alert. Guard every subsequent interaction against it.
     // await this.dismissEmploymentIdValidationAlert();
 
-    await this.patientMembershipSelect.selectOption({ label: patientData.membershipId });
+    await this.selectMembership(patientData.membershipId);
     console.log(`Selected Patient Membership ID as ${patientData.membershipId}`);
 
     await this.selectFromDropdown(this.patientContactCountryCodeTextBox, patientData.contactCountryCode, `SA (${patientData.contactCountryCode})`);
@@ -326,7 +323,51 @@ export class RegisterNewPatient {
     const patientId = toastText?.match(/Patient ID\s*:\s*(\S+)/i)?.[1] ?? '';
     console.log(`Captured Patient ID: ${patientId}`);
     savePatientId(patientId);
+    await this.confirmPatientCreatedPopup();
     return patientId;
+  }
+
+  /** Closes the "Patient ID ... Created Successfully" pop-up by clicking OK. */
+  async confirmPatientCreatedPopup() {
+    const okButton = this.page.getByRole('button', { name: 'OK', exact: true });
+    await okButton.click();
+    console.log('Clicked OK on the patient created pop-up');
+  }
+  /** Runs the complete registration flow in one call and returns the new Patient ID. */
+  async registerNewPatient(): Promise<string> {
+    await this.selectCurrentLocation();
+    await this.selectLocalLocationName();
+    await this.clickPatientRegistrationButton();
+    await this.selectTitle();
+
+    // Tab 1: Patient's details
+    await this.enterPatientDetails();
+    await this.continueToNextTab();
+
+    // Tab 2: Next of Kin
+    await this.fillNextOfKinDetails();
+    await this.continueToNextTab();
+
+    // Tab 3: Documents
+    await this.continueToNextTab();
+
+    // Tab 4: Payer Group
+    await this.selectBillingGroup();
+    await this.continueToNextTab();
+
+    // Tab 5: Review & Confirm
+    await this.createPatientAccount();
+    const patientId = await this.captureAndSavePatientId();
+
+    await this.goToHomePage();
+    return patientId;
+  }
+
+  /** Clicks the Home (house icon, accessible name "Hub") button in the left rail and waits for the home page. */
+  async goToHomePage() {
+    await this.page.getByRole('button', { name: 'Hub', exact: true }).click();
+    await expect(this.page).toHaveURL(/\/provider\/home/);
+    console.log('Navigated to Home page');
   }
 }
 
